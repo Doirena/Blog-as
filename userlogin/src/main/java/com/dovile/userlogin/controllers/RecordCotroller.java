@@ -44,7 +44,7 @@ public class RecordCotroller {
 			return "showNewRecord";	
 		}
 	
-	//Save new record
+	//Save new/edit record
 	@RequestMapping("/saveRec")
 	public String saveNewRecord(@ModelAttribute("record") Records record, @RequestParam("userId") long userId, ModelMap modelMap) {
 		User user= userRepository.findById(userId).get();
