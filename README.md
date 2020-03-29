@@ -1,5 +1,5 @@
 # Blog-as
-User login with Spring Boot
+User login with Spring Boot, MySQL database. 
 
  
 ## Can open:
