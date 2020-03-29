@@ -66,20 +66,6 @@ public class RecordCotroller {
 		return "showUpdateRecord";	
 	}
 	
-	//Save edit record
-//	@RequestMapping("/updateRec")
-//	public String saveUpdateRecord(@ModelAttribute("record") Records record, @RequestParam("userId") long userId, ModelMap modelMap) {
-//		
-//		User user= userRepository.findById(userId).get();	
-//		record.setUser(user);
-//		recordRepository.save(record);
-//		
-//		
-//		List<Records> records =user.getRecords();
-//		modelMap.addAttribute("userId", userId);
-//		modelMap.addAttribute("records", records);
-//		 return "userRecords";
-//	}
 	
 
 }
