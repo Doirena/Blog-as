@@ -9,7 +9,7 @@
 <body>
 
 <h2>Login</h2>
-<form action="login" methood="post">
+<form action="login" method="post">
 <pre>
 User Name: <input type="text" name="email"/>
 Password: <input type="password" name="password"/>
