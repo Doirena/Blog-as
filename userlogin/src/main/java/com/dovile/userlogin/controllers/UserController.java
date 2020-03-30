@@ -48,7 +48,7 @@ public class UserController {
 	}
 
 	// User login action and go to user records page
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(@RequestParam("email") String email, @RequestParam("password") String password,
 			ModelMap modelMap) {
 		User user = userRepository.findByEmail(email);
