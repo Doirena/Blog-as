@@ -11,7 +11,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 	
 	@Id
@@ -19,7 +23,8 @@ public class User {
 	private Long id;
 	private String email;
 	private String password;
-	
+	 
+	@JsonIgnore
 	 @OneToMany(mappedBy="user")
 	private List <Records> records;
 	
